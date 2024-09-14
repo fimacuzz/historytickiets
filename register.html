@@ -1,0 +1,94 @@
+<html lang="ru"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleregister.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Регистрация</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showForm('register')">Регистрация</a>
+        <a href="#" onclick="showForm('login')">Войти</a>
+        <a href="profile.html" onclick="showProfile()">Профиль</a>
+    </nav>
+
+    <div class="content" id="content">
+        <h2>Выберите действие</h2>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ваша компания</p>
+    </footer>
+
+    <script>
+        function showForm(formType) {
+            const content = document.getElementById('content');
+            if (formType === 'register') {
+                content.innerHTML = `
+                    <h2>Регистрация</h2>
+                    <form id="registerForm">
+                        <label for="username">Имя пользователя:</label>
+                        <input type="text" id="username" required>
+                        <label for="email">Электронная почта:</label>
+                        <input type="email" id="email" required>
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" required>
+                        <button type="submit">Зарегистрироваться</button>
+                    </form>
+                `;
+                document.getElementById('registerForm').onsubmit = registerUser;
+            } else if (formType === 'login') {
+                content.innerHTML = `
+                    <h2>Вход</h2>
+                    <form id="loginForm">
+                        <label for="loginEmail">Электронная почта:</label>
+                        <input type="email" id="loginEmail" required>
+                        <label for="loginPassword">Пароль:</label>
+                        <input type="password" id="loginPassword" required>
+                        <button type="submit">Войти</button>
+                    </form>
+                `;
+                document.getElementById('loginForm').onsubmit = loginUser;
+            }
+        }
+
+        function registerUser(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            users.push({ username, email, password });
+            localStorage.setItem('users', JSON.stringify(users));
+
+            // Сохранение текущего пользователя для профиля
+            localStorage.setItem('currentUser', JSON.stringify({ username, email }));
+
+            alert('Регистрация успешна!');
+            window.location.href = 'profile.html'; // Перенаправление на страницу профиля
+        }
+
+        function loginUser(event) {
+            event.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            const user = users.find(u => u.email === email && u.password === password);
+
+            if (user) {
+                localStorage.setItem('currentUser', JSON.stringify(user));
+                alert(`Добро пожаловать, ${user.username}!`);
+                window.location.href = 'profile.html'; // Перенаправление на страницу профиля
+            } else {
+                alert('Неверные учетные данные.');
+            }
+        }
+    </script>
+</body>
+</html>

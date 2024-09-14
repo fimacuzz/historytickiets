@@ -1,0 +1,49 @@
+<html lang="ru"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Baby+Kayla&family=A+Plakat+Cmpl&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400&display=swap&text=Список%20билетов" rel="stylesheet">
+    <script>
+        function checkRegistration(event) {
+            // Проверяем, зарегистрирован ли пользователь
+            const isRegistered = localStorage.getItem('isRegistered') === 'true'; // Проверка из LocalStorage
+            if (!isRegistered) {
+                event.preventDefault();
+                alert("Сначала зарегистрируйтесь.");
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+    <header>
+        <h2><a href="index.html">Главная</a></h2>
+    </header>
+    <nav>
+        <a href="profile.html">Мой профиль</a>
+        <a href="register.html" onclick="registerUser()">Регистрация</a>
+    </nav>
+
+    <div class="content">
+        <section id="belarus">
+            <h2>История Беларуси</h2>
+            <ul>
+                <p class="center"><li><a href="belhistory.html" onclick="checkRegistration(event)">Уроки</a></li></p>
+                <p class="tickets-header"><li><a href="tickets.html" onclick="checkRegistration(event)">Билеты</a></li></p>
+            </ul>
+        </section>
+        <h2>Всемирная История</h2>
+        <ul>
+            <li><a href="10klass.html" onclick="checkRegistration(event)">Уроки</a></li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 icte (sasha and elisey big love)</p>
+    </footer>
+</body>
+</html>

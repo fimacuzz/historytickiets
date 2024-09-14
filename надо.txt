@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ссылка на файл CSS -->
+</head>
+<body>
+    <header>
+        <h1>Выбор истории</h1>
+    </header>
+    <nav>
+        <a href="#belarus">История Беларуси</a>
+        <a href="#world">Всемирная История</a>
+    </nav>
+    <div class="content">
+        <section id="belarus">
+            <h2>История Беларуси</h2>
+            <a href="#lessons-belarus">Уроки</a>
+            <a href="#tickets-belarus">Билеты</a>
+        </section>
+        <section id="lessons-belarus">
+            <h2>Уроки по истории Беларуси</h2>
+            <ul>
+                <!-- Параграфы уроков -->
+                <li>Параграф 1</li>
+                <li>Параграф 2</li>
+                <li>Параграф 3</li>
+                <li>Параграф 4</li>
+                <li>Параграф 5</li>
+                <li>Параграф 6</li>
+                <li>Параграф 7</li>
+                <li>Параграф 8</li>
+                <li>Параграф 9</li>
+                <li>Параграф 10</li>
+                <li>Параграф 11</li>
+                <li>Параграф 12</li>
+                <li>Параграф 13</li>
+                <li>Параграф 14</li>
+                <li>Параграф 15</li>
+                <li>Параграф 16</li>
+                <li>Параграф 17</li>
+                <li>Параграф 18</li>
+                <li>Параграф 19</li>
+                <li>Параграф 20</li>
+                <li>Параграф 21</li>
+                <li>Параграф 22</li>
+                <li>Параграф 23</li>
+                <li>Параграф 24</li>
+                <li>Параграф 25</li>
+                <li>Параграф 26</li>
+                <li>Параграф 27</li>
+                <li>Параграф 28</li>
+                <li>Параграф 29</li>
+                <li>Параграф 30</li>
+                <li>Параграф 31</li>
+                <li>Параграф 32</li>
+                <li>Параграф 33</li>
+                <li>Параграф 34</li>
+                <li>Параграф 35</li>
+                <li>Параграф 36</li>
+                <li>Параграф 37</li>
+                <li>Параграф 38</li>
+                <li>Параграф 39</li>
+                <li>Параграф 40</li>
+            </ul>
+        </section>
+        <section id="tickets-belarus">
+            <h2>Билеты по истории Беларуси</h2>
+            <ul>
+                <!-- Номера билетов -->
+                <li>Билет 1</li>
+                <li>Билет 2</li>
+                <li>Билет 3</li>
+                <li>Билет 4</li>
+                <li>Билет 5</li>
+                <li>Билет 6</li>
+                <li>Билет 7</li>
+                <li>Билет 8</li>
+                <li>Билет 9</li>
+                <li>Билет 10</li>
+                <li>Билет 11</li>
+                <li>Билет 12</li>
+                <li>Билет 13</li>
+                <li>Билет 14</li>
+                <li>Билет 15</li>
+                <li>Билет 16</li>
+                <li>Билет 17</li>
+                <li>Билет 18</li>
+                <li>Билет 19</li>
+                <li>Билет 20</li>
+                <li>Билет 21</li>
+                <li>Билет 22</li>
+                <li>Билет 23</li>
+                <li>Билет 24</li>
+                <li>Билет 25</li>
+            </ul>
+        </section>
+        <section id="world">
+            <h2>Всемирная История</h2>
+            <ul>
+                <!-- Параграфы всемирной истории -->
+                <li>Параграф 1</li>
+                <li>Параграф 2</li>
+                <li>Параграф 3</li>
+                <li>Параграф 4</li>
+                <li>Параграф 5</li>
+                <li>Параграф 6</li>
+                <li>Параграф 7</li>
+                <li>Параграф 8</li>
+                <li>Параграф 9</li>
+                <li>Параграф 10</li>
+                <li>Параграф 11</li>
+                <li>Параграф 12</li>
+                <li>Параграф 13</li>
+                <li>Параграф 14</li>
+                <li>Параграф 15</li>
+                <li>Параграф 16</li>
+                <li>Параграф 17</li>
+                <li>Параграф 18</li>
+                <li>Параграф 19</li>
+                <li>Параграф 20</li>
+                <li>Параграф 21</li>
+                <li>Параграф 22</li>
+                <li>Параграф 23</li>
+                <li>Параграф 24</li>
+                <li>Параграф 25</li>
+                <li>Параграф 26</li>
+                <li>Параграф 27</li>
+                <li>Параграф 28</li>
+                <li>Параграф 29</li>
+                <li>Параграф 30</li>
+                <li>Параграф 31</li>
+                <li>Параграф 32</li>
+                <li>Параграф 33</li>
+                <li>Параграф 34</li>
+                <li>Параграф 35</li>
+                <li>Параграф 36</li>
+                <li>Параграф 37</li>
+                <li>Параграф 38</li>
+                <li>Параграф 39</li>
+                <li>Параграф 40</li>
+                <li>Параграф 41</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 История</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Baby+Kayla&family=A+Plakat+Cmpl&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400&display=swap&text=Список%20билетов" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1><b href="index.html">Главная</b></h1>
+    </header>
+    <nav>
+        <a href="profile.html">Мой профиль</a>
+    </nav>
+
+    <div class="content">
+        <section id="belarus">
+            <h2>История Беларуси</h2>
+            <ul>
+                <p class="center"><li><a href="belhistory.html">Уроки</a></li></p>
+                <p class="tickets-header"><li><a href="tickets.html">Билеты</a></li></p>
+                
+            
+            </ul>
+        </section>
+            <h2>Всемирная История</h2>
+            <ul>
+                <li><a href="10klass.html">Уроки</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 icte (sasha and elisey big love)</p>
+    </footer>
+</body>
+</html>

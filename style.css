@@ -1,0 +1,158 @@
+body {
+    font-family: 'A Plakat Cmpl', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a, nav a {
+    color: #000; /* Цвет текста по умолчанию */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+
+b, nav b {
+    color: #ffffff; /* Цвет текста по умолчанию */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+b:hover, nav b:hover {
+    color: #3f3e3d; /* Цвет текста при наведении */
+}
+
+b:visited, nav b:visited {
+    color: #000; /* Цвет для посещённых ссылок */
+}
+
+
+a:hover, nav a:hover {
+    color: #3f3e3d; /* Цвет текста при наведении */
+}
+
+a:visited, nav a:visited {
+    color: #000; /* Цвет для посещённых ссылок */
+}
+
+
+.center a {
+    display: inline-block; /* Чтобы трансформация работала */
+    transition: transform 0.3s ease; /* Плавный переход для трансформации */
+}
+
+.center a:hover {
+    transform: scale(1.1); /* Увеличение текста на 10% при наведении */
+}
+
+
+
+header {
+    font-family: 'Titillium Web', sans-serif; /* Установка шрифта Titillium Web */
+    font-weight: 400; /* Установка веса шрифта */
+    background: url('fon.png') no-repeat center center; /* Установка фонового изображения */
+    background-size: cover; /* Заполнение всего элемента изображением */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+.main-title {
+    font-family: 'Baby Kayla', cursive;
+    font-size: 60px;
+    background: url('fon.png') no-repeat center center; /* Установка фонового изображения */
+    background-size: cover; /* Заполнение всего элемента изображением */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* КНОПКИ */
+nav {
+    margin: 20px 0;
+    text-align: center;
+    text-decoration: none;
+}
+/* КНОПКИ */
+
+nav a {
+    margin: 0 15px;
+    color: #74161671;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.content {
+    padding: 20px;
+    background: #0e041d15;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+}
+
+h2 {
+    color: #333;
+}
+
+
+nav c {
+    color: #333;
+}
+
+
+
+ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-decoration: none;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #000000; /* Цвет текста по умолчанию */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold;
+    transition: color 0.3s;
+    background-size: cover;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+}

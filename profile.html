@@ -1,0 +1,71 @@
+<html lang="ru"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleregister.css">
+    <title>Профиль пользователя</title>
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Профиль пользователя</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="logout()">Выйти</a>
+        <a href="index.html">Главная</a>
+        <a href="tickets.html">Билеты</a>
+    </nav>
+
+    <div class="content" id="content">
+        <h2>Ваш профиль</h2>
+        <div id="userInfo">
+            <p>Имя пользователя: <b id="username">Имя пользователя</b></p>
+            <p>Электронная почта: <b id="email">email@example.com</b></p>
+        </div>
+
+        <h3>Загрузить фотографию профиля</h3>
+        <input type="file" id="fileInput" accept="image/*" onchange="previewImage()">
+        <div id="imagePreview" class="image-preview"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ваша компания</p>
+    </footer>
+
+    <script>
+        // Пример данных пользователя (можно заменить на данные из localStorage)
+        const user = JSON.parse(localStorage.getItem('currentUser'));
+
+        if (user) {
+            document.getElementById('username').textContent = user.username;
+            document.getElementById('email').textContent = user.email;
+        } else {
+            document.getElementById('content').innerHTML = `<p>Пожалуйста, войдите, чтобы увидеть ваш профиль.</p>`;
+        }
+
+        function logout() {
+            localStorage.removeItem('currentUser');
+            window.location.href = 'index.html'; // Перенаправление на главную страницу
+        }
+
+        function previewImage() {
+            const fileInput = document.getElementById('fileInput');
+            const imagePreview = document.getElementById('imagePreview');
+            imagePreview.innerHTML = ''; // Очистить предыдущий просмотр
+
+            const file = fileInput.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.alt = 'Preview';
+                    img.classList.add('profile-image');
+                    imagePreview.appendChild(img);
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+</body>
+</html>

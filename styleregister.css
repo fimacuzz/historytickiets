@@ -1,0 +1,129 @@
+body {
+    font-family: 'A Plakat Cmpl', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a, nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+b, nav b {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+b:hover, nav b:hover {
+    color: #3f3e3d;
+}
+
+b:visited, nav b:visited {
+    color: #000;
+}
+
+a:hover, nav a:hover {
+    color: #3f3e3d;
+}
+
+a:visited, nav a:visited {
+    color: #000;
+}
+
+.center a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.center a:hover {
+    transform: scale(1.1);
+}
+
+header {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    background: url('fon.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-title {
+    font-family: 'Baby Kayla', cursive;
+    font-size: 60px;
+    background: url('fon.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #74161671;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+    background: #0e041d15;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+}
